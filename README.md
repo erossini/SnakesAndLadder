@@ -1,7 +1,7 @@
 # Snakes And Ladder
 A C# implementation of Snakes and Ladders Kata (https://agilekatas.co.uk/katas/snakesandladders-kata)
 
-![C# Snakes And Ladder](https://raw.githubusercontent.com/erossini/SnakesAndLadder/FirstUpdate/Documentation/Images/SnakeAndLadderBoard.jpg)
+![C# Snakes And Ladder](https://raw.githubusercontent.com/erossini/SnakesAndLadder/blob/FirstUpdate/Documentation/Images/SnakeAndLadderBoard.jpg?raw=true)
 
 # Specflow
 Specflow is working with .NET Framework. I'm using for this project .NET Core. For this reason I'm using the new preview.
