@@ -21,7 +21,7 @@ What you find in the solution is:
 
 ## Example of output
 
-![C# Snakes And Ladder](https://github.com/erossini/SnakesAndLadder/blob/FirstUpdate/Documentation/Images/SnakeAndLadderOutput.jpg?raw=true)
+![C# Snakes And Ladder](https://github.com/erossini/SnakesAndLadder/blob/FirstUpdate/Documentation/Images/SnakeAndLadderOutput.png?raw=true)
 
 # Specflow
 [Specflow](https://specflow.org/) is working with `.NET Framework`, `.NET Core` and `Mono`. I'm using for this project `.NET Core` although it is in beta version at the moment I'm writing this project.
