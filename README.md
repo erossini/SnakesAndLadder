@@ -15,11 +15,11 @@ SpecFlow 3 requires an update to the Visual Studio extension for SpecFlow. Durin
 https://www.myget.org/F/specflow-vsix/vsix/
 
 To do so:
-- Select Tools | Options in Visual Studio.
-- Locate Environment in the list, and select the Extensions and Updates sub-item.
-- Click on Add to add a new feed.
-- Give the new source a Name (e.g. SpecFlow 3 preview) and enter the source (https://www.myget.org/F/specflow-vsix/vsix/).
-- Select Tools | Extensions and Updates. You should see an update listed on the left.
-- Click on Updates to update the new extension.
+- Select **Tools** | Options in **Visual Studio**.
+- Locate **Environment** in the list, and select the **Extensions and Updates** sub-item.
+- Click on **Add** to add a new feed.
+- Give the new source a **Name** (e.g. SpecFlow 3 preview) and enter the source (https://www.myget.org/F/specflow-vsix/vsix/).
+- Select **Tools | Extensions and Updates**. You should see an update listed on the left.
+- Click on **Updates** to update the new extension.
 
 Once a stable version of SpecFlow 3 has been released, the new version of the extension will go live for all users, and you can revert to the standard feed.
