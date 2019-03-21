@@ -1,64 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
-    <PackageReference Include="SpecFlow" Version="3.0.177-beta" />
-    <PackageReference Include="SpecFlow.NUnit" Version="3.0.177-beta" />
-    <PackageReference Include="SpecFlow.NUnit.Runners" Version="3.0.177-beta" />
-    <PackageReference Include="SpecRun.SpecFlow" Version="3.0.246-beta" />
+    <PackageReference Include="SpecFlow" Version="3.0.169-beta" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.0.169-beta" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.0.169-beta" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SnakesAndLadder.Abstractions\SnakesAndLadder.Abstractions.csproj" />
     <ProjectReference Include="..\SnakesAndLadder.Models\SnakesAndLadder.Models.csproj" />
     <ProjectReference Include="..\SnakesAndLadder.Services\SnakesAndLadder.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="ComputerControlledCharacter.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ComputerControlledCharacter.feature</DependentUpon>
-    </Compile>
-    <Compile Update="MovingYourToken.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>MovingYourToken.feature</DependentUpon>
-    </Compile>
-    <Compile Update="MultiplePlayers.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>MultiplePlayers.feature</DependentUpon>
-    </Compile>
-    <Compile Update="SnakesAndLadders.feature.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>SnakesAndLadders.feature</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="ComputerControlledCharacter.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ComputerControlledCharacter.feature.cs</LastGenOutput>
-    </None>
-    <None Update="MovingYourToken.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>MovingYourToken.feature.cs</LastGenOutput>
-    </None>
-    <None Update="MultiplePlayers.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>MultiplePlayers.feature.cs</LastGenOutput>
-    </None>
-    <None Update="SnakesAndLadders.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SnakesAndLadders.feature.cs</LastGenOutput>
-    </None>
   </ItemGroup>
 
 </Project>
