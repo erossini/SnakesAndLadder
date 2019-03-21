@@ -1,6 +1,8 @@
 # Snakes And Ladder
 A C# implementation of Snakes and Ladders Kata (https://agilekatas.co.uk/katas/snakesandladders-kata)
 
+![C# Snakes And Ladder](https://raw.githubusercontent.com/erossini/SnakesAndLadder/FirstUpdate/Documentation/Images/SnakeAndLadderBoard.jpg)
+
 # Specflow
 Specflow is working with .NET Framework. I'm using for this project .NET Core. For this reason I'm using the new preview.
 
@@ -16,7 +18,7 @@ To do so:
 - Select Tools | Options in Visual Studio.
 - Locate Environment in the list, and select the Extensions and Updates sub-item.
 - Click on Add to add a new feed.
-- Give the new source a Name (e.g. “SpecFlow 3 preview”) and enter the source (“https://www.myget.org/F/specflow-vsix/vsix/”).
+- Give the new source a Name (e.g. SpecFlow 3 preview) and enter the source (https://www.myget.org/F/specflow-vsix/vsix/).
 - Select Tools | Extensions and Updates. You should see an update listed on the left.
 - Click on Updates to update the new extension.
 
