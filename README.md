@@ -6,7 +6,7 @@ A C# implementation of Snakes and Ladders Kata (https://agilekatas.co.uk/katas/s
 ## Solution explained
 My implementation of _Snakes And Ladder_ is build with `.NET Core 2.2`. The test project is build with `Specflow` and `NUnit`.
 
-`Specflow` is used to define, manage and automatically execute human-readable acceptance tests in `.NET projects`. Writing easily understandable tests is a cornerstone of the `BDD` paradigm and also helps build up a living documentation of your system. As part of the Cucumber family, `SpecFlow` uses the official ![Gherkin](https://github.com/cucumber/gherkin/wiki) parser and supports the `.NET framework`, `Xamarin` and `Mono`.
+`Specflow` is used to define, manage and automatically execute human-readable acceptance tests in `.NET projects`. Writing easily understandable tests is a cornerstone of the `BDD` paradigm and also helps build up a living documentation of your system. As part of the Cucumber family, `SpecFlow` uses the official [Gherkin](https://github.com/cucumber/gherkin/wiki) parser and supports the `.NET framework`, `Xamarin` and `Mono`.
 
 I'm using `Specflow` because the acceptance criteria are written using `Gherkin`.
 
@@ -20,7 +20,7 @@ What you find in the solution is:
 - **Tests\SnakesAndLadder.Tests**: Specflow tests
 
 # Specflow
-![Specflow](https://specflow.org/) is working with .NET Framework. I'm using for this project .NET Core. For this reason I'm using the new preview.
+[Specflow](https://specflow.org/) is working with .NET Framework. I'm using for this project .NET Core. For this reason I'm using the new preview.
 
 The first public preview of SpecFlow with support for .NET Core is now available. If you want to try out the new version, please read the following information carefully. There are a number of steps that are necessary before you can use the public preview.
 
