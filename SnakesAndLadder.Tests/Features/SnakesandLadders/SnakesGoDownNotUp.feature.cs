@@ -71,11 +71,11 @@ namespace SnakesAndLadder.Tests.Features.SnakesandLadders
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("SnameDown")]
+        [NUnit.Framework.DescriptionAttribute("SnakeDown")]
         [NUnit.Framework.CategoryAttribute("snake")]
-        public virtual void SnameDown()
+        public virtual void SnakeDown()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SnameDown", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SnakeDown", null, new string[] {
                         "snake"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);

@@ -7,10 +7,10 @@
 Scenario: ResultBetween1And6
 	Given the game is started
 	When the player rolls a die
-	Then the result should be between 1-6 inclusive
+	Then the result should be between 1 and 6 inclusive
 
 @dice
 Scenario: ResultAndMove
-Given the player rolls a 4
-When they move their token
-Then the token should move 4 spaces
+	Given the player rolls a 4
+	When they move their token
+	Then the token should move 4 spaces

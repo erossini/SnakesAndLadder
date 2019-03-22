@@ -25,6 +25,12 @@ namespace SnakesAndLadder.Models
         /// Gets or sets the current cell position.
         /// </summary>
         /// <value>The current cell position.</value>
-        public int CurrentCellPosition { get; set; }
+        public int CurrentCellPosition { get; set; } = 1;
+
+        /// <summary>
+        /// Gets or sets is the player is the winner
+        /// </summary>
+        /// <value>True if the player is the winner</value>
+        public bool IsTheWinner { get; set; } = false;
     }
 }

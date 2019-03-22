@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SnakesAndLadder.Abstractions\SnakesAndLadder.Abstractions.csproj" />
+    <ProjectReference Include="..\SnakesAndLadder.Services\SnakesAndLadder.Services.csproj" />
+  </ItemGroup>
+
 </Project>

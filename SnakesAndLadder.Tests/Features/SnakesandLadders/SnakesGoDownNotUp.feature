@@ -4,7 +4,7 @@
 	So that the game is more fun
 
 @snake
-Scenario: SnameDown
+Scenario: SnakeDown
 	Given there is a snake connecting squares 2 and 12
 	When the token lands on square 12
 	Then the token is on square 2
