@@ -47,8 +47,8 @@ namespace SnakesAndLadder.Tests.Steps
             //_board.AddSnake(99, 80);
 
             _player = new PlayerService(_nplayer, _logging);
-            _player.AssignPlayers(new Models.Player() { PlayerName = "One" });
-            _player.AssignPlayers(new Models.Player() { PlayerName = "Two" });
+            _player.AssignPlayers(new Models.Player() { PlayerName = "Player 1" });
+            _player.AssignPlayers(new Models.Player() { PlayerName = "Player 2" });
 
             _game = new GameService(_board, _dice, _logging, _player);
         }

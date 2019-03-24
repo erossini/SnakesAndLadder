@@ -32,5 +32,11 @@ namespace SnakesAndLadder.Models
         /// </summary>
         /// <value>True if the player is the winner</value>
         public bool IsTheWinner { get; set; } = false;
+
+        /// <summary>
+        /// Gets or sets the first dice to define the order
+        /// </summary>
+        /// <value>Value of the first dice</value>
+        public int FirstDice { get; set; } = 0;
     }
 }

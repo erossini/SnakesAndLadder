@@ -10,6 +10,9 @@ namespace SnakesAndLadder.Abstractions
         List<Player> Players { get; set; }
         int TotalPlayers { get; }
 
+        void AssignDiceToPlayer(int playerNumber, int dice);
         void AssignPlayers(Player player);
+        bool CheckDifferentFirstDiceValue();
+        bool OrderPlayers();
     }
 }

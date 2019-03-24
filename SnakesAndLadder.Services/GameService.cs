@@ -66,7 +66,7 @@ namespace SnakesAndLadder.Services
             _logging.WriteLog("NextChange");
 
             if (currPlayer.PlayerNumber < _players.TotalPlayers)
-                rtn = _players.Players.Skip(currentPlayer.PlayerNumber).First();
+                rtn = _players.Players.Skip(currPlayer.PlayerNumber).First();
             else
                 rtn = _players.Players.First();
 
