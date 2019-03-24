@@ -23,6 +23,10 @@ What you find in the solution is:
 
 ![C# Snakes And Ladder](https://github.com/erossini/SnakesAndLadder/blob/FirstUpdate/Documentation/Images/SnakeAndLadderOutput.png?raw=true)
 
+## Test results
+
+![C# Snakes And Ladder Test results](https://github.com/erossini/SnakesAndLadder/blob/FirstUpdate/Documentation/Images/TestExplorer.png?raw=true)
+
 # Specflow
 [Specflow](https://specflow.org/) is working with `.NET Framework`, `.NET Core` and `Mono`. I'm using for this project `.NET Core` although it is in beta version at the moment I'm writing this project.
 
