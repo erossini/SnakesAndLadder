@@ -22,7 +22,8 @@ namespace SnakesAndLadder.Tests.Steps
             _logging = new TestLogging();
             _dice = new DiceService(_logging);
 
-            _board = new BoardService(_boardsize, _logging);
+            _board = new BoardService(_logging);
+            _board.CreateBoard(_boardsize);
             //_board.AddLadder(2, 38);
             //_board.AddLadder(7, 14);
             //_board.AddLadder(8, 31);
@@ -46,7 +47,7 @@ namespace SnakesAndLadder.Tests.Steps
             //_board.AddSnake(95, 75);
             //_board.AddSnake(99, 80);
 
-            _player = new PlayerService(_nplayer, _logging);
+            _player = new PlayerService(_logging);
             _player.AssignPlayers(new Models.Player() { PlayerName = "Player 1" });
             _player.AssignPlayers(new Models.Player() { PlayerName = "Player 2" });
 

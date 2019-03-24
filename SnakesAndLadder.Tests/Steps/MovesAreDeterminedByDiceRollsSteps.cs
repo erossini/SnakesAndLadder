@@ -11,7 +11,6 @@ namespace SnakesAndLadder.Tests.Steps
     [Binding]
     public class MovesAreDeterminedByDiceRollsSteps : BaseStep
     {
-        int _length = 50;
         int _diceResult;
 
         Player _testPlayer;

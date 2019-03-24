@@ -1,4 +1,5 @@
-﻿using SnakesAndLadder.Abstractions;
+﻿using Microsoft.Extensions.DependencyInjection;
+using SnakesAndLadder.Abstractions;
 using SnakesAndLadder.Services;
 using System;
 
@@ -16,10 +17,20 @@ namespace SnakesAndLadder
 
         static void Main(string[] args)
         {
-            _logging = new Logging();
-            _dice = new DiceService(_logging);
+            //setup our DI
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton<IBoardService, BoardService>()
+                .AddSingleton<IDiceService, DiceService>()
+                .AddSingleton<IGameService, GameService>()
+                .AddSingleton<ILogging, Logging>()
+                .AddSingleton<IPlayerService, PlayerService>()
+                .BuildServiceProvider();
 
-            _board = new BoardService(_boardsize, _logging);
+            _logging = new Logging();
+            _dice = serviceProvider.GetService<IDiceService>();
+
+            _board = serviceProvider.GetService<IBoardService>();
+            _board.CreateBoard(_boardsize);
             _board.AddLadder(2, 38);
             _board.AddLadder(7, 14);
             _board.AddLadder(8, 31);
@@ -43,13 +54,13 @@ namespace SnakesAndLadder
             _board.AddSnake(95, 75);
             _board.AddSnake(99, 80);
 
-            _player = new PlayerService(_nplayer, _logging);
+            _player = serviceProvider.GetService<IPlayerService>();
             _player.AssignPlayers(new Models.Player() { PlayerName = "One" });
             _player.AssignPlayers(new Models.Player() { PlayerName = "Two" });
 
             if (_player.TotalPlayers > 0)
             {
-                _game = new GameService(_board, _dice, _logging, _player);
+                _game = serviceProvider.GetService<IGameService>();
                 _game.Play();
             }
 
@@ -82,12 +93,10 @@ namespace SnakesAndLadder
             }
         }
 
-        static void AskForPlayer()
+        static void AskForPlayer(IPlayerService player)
         {
             Console.WriteLine("Number of players?");
             _nplayer = Convert.ToInt32(Console.ReadLine());
-
-            _player = new PlayerService(_nplayer, _logging);
 
             if (_nplayer > 0)
             {
@@ -96,7 +105,7 @@ namespace SnakesAndLadder
                     Console.WriteLine("Enter your name");
                     string name = Console.ReadLine();
                     if (!string.IsNullOrEmpty(name))
-                        _player.AssignPlayers(new Models.Player() { PlayerName = name });
+                        player.AssignPlayers(new Models.Player() { PlayerName = name });
                 }
             }
         }

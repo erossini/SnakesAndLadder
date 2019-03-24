@@ -10,11 +10,9 @@ namespace SnakesAndLadder.Services
     public class PlayerService : IPlayerService
     {
         ILogging _logging;
-        int _numberOfPlayer;
 
-        public PlayerService(int numberOfPlayer, ILogging logging)
+        public PlayerService(ILogging logging)
         {
-            _numberOfPlayer = numberOfPlayer;
             _logging = logging;
         }
 

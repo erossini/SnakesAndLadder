@@ -13,6 +13,6 @@ namespace SnakesAndLadder.Abstractions
         void AddLadder(LadderCell ladderCell);
         void AddSnake(int cellNumber, int penaltyCell);
         void AddSnake(SnakeCell snakeCell);
-        void CreateBoard();
+        void CreateBoard(int boardSize);
     }
 }

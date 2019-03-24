@@ -9,24 +9,20 @@ namespace SnakesAndLadder.Services
     public class BoardService : IBoardService
     {
         ILogging _logging;
-        int _boardSize;
 
-        public BoardService(int boardSize, ILogging logging)
+        public BoardService(ILogging logging)
         {
-            _boardSize = boardSize;
             _logging = logging;
-
-            CreateBoard();
         }
 
         public Cell[] Board { get; set; }
 
-        public void CreateBoard()
+        public void CreateBoard(int boardSize)
         {
             _logging.WriteLog("Create a new board");
 
-            Board = new Cell[_boardSize];
-            for (int i = 0; i < _boardSize; i++)
+            Board = new Cell[boardSize];
+            for (int i = 0; i < boardSize; i++)
             {
                 Cell c = new Cell();
                 c.CellNumber = i + 1;
